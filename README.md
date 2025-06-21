@@ -1,6 +1,6 @@
 # Kland App Assignment
 
-This project is a front-end application developed as part of a coding assignment. It's built with Angular 13+ and TypeScript, featuring a complete user authentication flow. The application includes a login page that connects to a live API and a user account page that displays and allows editing of profile details.
+This project is a front-end application developed as part of a coding assignment. It's built with Angular 18+ and TypeScript, featuring a complete user authentication flow. The application includes a login page that connects to a live API and a user account page that displays and allows editing of profile details.
 
 ### Key Features:
 
