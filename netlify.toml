@@ -1,6 +1,6 @@
 [build]
   command = "ng build"
-  publish = "dist/kland-app"
+  publish = "dist/kland-app/browser"
 
 [[redirects]]
   from = "/*"
