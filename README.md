@@ -9,6 +9,13 @@ This project is a front-end application developed as part of a coding assignment
 *   **Editable Profile:** Users can update their details, which are saved using the browser's `localStorage` for persistence.
 *   **Custom UI:** The application is styled with CSS to closely match the provided design mockups.
 
+### Demo Credentials
+
+To test the login flow, please use the following credentials:
+
+*   **Email:** `eddy@yopmail.com`
+*   **Password:** `123123`
+
 ### Tech Stack:
 
 *   **Framework:** Angular 13+

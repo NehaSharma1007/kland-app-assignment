@@ -30,20 +30,28 @@ export class LoginComponent {
     this.error = null;
     const { email, password } = this.loginForm.value;
 
-    // MOCK LOGIN LOGIC - Allow any valid email/password
-    // Simulate API response using the entered email
-    const mockUser = {
-      firstName: 'Test',
-      lastName: 'User',
-      email: email, // Use the email from the form
-      phoneCode: '965',
-      phone: '12345678'
-    };
-    localStorage.setItem('user', JSON.stringify(mockUser));
-    setTimeout(() => {
-      this.loading = false;
-      this.router.navigate(['/account']);
-    }, 500); // Simulate network delay
+    // MOCK LOGIN LOGIC - Only allow specific credentials
+    if (email === 'eddy@yopmail.com' && password === '123123') {
+      // Simulate API response for the correct user
+      const mockUser = {
+        firstName: 'Eddy',
+        lastName: 'Yopmail',
+        email: 'eddy@yopmail.com',
+        phoneCode: '965',
+        phone: '12345678'
+      };
+      localStorage.setItem('user', JSON.stringify(mockUser));
+      setTimeout(() => {
+        this.loading = false;
+        this.router.navigate(['/account']);
+      }, 500); // Simulate network delay
+    } else {
+      // For any other credentials, show an error
+      setTimeout(() => {
+        this.error = '401 Unauthorized #1';
+        this.loading = false;
+      }, 500);
+    }
     return;
     // END MOCK LOGIN LOGIC
 
