@@ -1,27 +1,18 @@
-# KlandApp
+# Kland App Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+This project is a front-end application developed as part of a coding assignment. It's built with Angular 13+ and TypeScript, featuring a complete user authentication flow. The application includes a login page that connects to a live API and a user account page that displays and allows editing of profile details.
 
-## Development server
+### Key Features:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+*   **User Login:** A fully functional login form that authenticates against a live API endpoint. Includes mock logic for offline demonstration.
+*   **User Account Page:** After login, users are redirected to a profile page displaying their personal information.
+*   **Editable Profile:** Users can update their details, which are saved using the browser's `localStorage` for persistence.
+*   **Custom UI:** The application is styled with CSS to closely match the provided design mockups.
 
-## Code scaffolding
+### Tech Stack:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+*   **Framework:** Angular 18+
+*   **Language:** TypeScript
+*   **Forms:** Angular Reactive Forms
+*   **API Communication:** Angular `HttpClient`
+*   **Styling:** HTML & CSS
