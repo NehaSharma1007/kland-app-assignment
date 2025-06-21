@@ -1,0 +1,67 @@
+<div class="account-container">
+  <div class="account-header">
+    <img src="assets/kland-logo.png" alt="Kland Logo" class="logo" />
+    <div class="account-title">
+      <h2>MY ACCOUNT</h2>
+      <p>Manage Your Fun: View Tickets, Book Zones, and Track Your Adventure!</p>
+    </div>
+  </div>
+  <div class="account-content">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">Edit Profile</a></li>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Delete Account</a></li>
+        <li><a href="#" class="logout">Logout</a></li>
+      </ul>
+    </aside>
+    <main class="profile-main">
+      <div class="profile-header">
+        <div class="avatar"></div>
+        <div class="profile-info">
+          <div class="profile-name">{{ profileForm.value.firstName }} {{ profileForm.value.lastName }}</div>
+          <div class="profile-email">{{ profileForm.value.email }}</div>
+          <div class="profile-phone">+{{ profileForm.value.phoneCode }} {{ profileForm.value.phone }}</div>
+        </div>
+      </div>
+      <form [formGroup]="profileForm" (ngSubmit)="onSave()" class="profile-form">
+        <h3>PERSONAL INFORMATION</h3>
+        <div class="form-row">
+          <input formControlName="firstName" placeholder="First Name" />
+          <input formControlName="lastName" placeholder="Last Name" />
+        </div>
+        <div class="form-row">
+          <input formControlName="email" placeholder="Email Address" />
+          <div class="phone-group">
+            <input formControlName="phoneCode" placeholder="Code" style="width: 60px;" />
+            <input formControlName="phone" placeholder="Phone Number" />
+          </div>
+        </div>
+        <div class="form-row">
+          <input formControlName="oldPassword" type="password" placeholder="Enter your current password" />
+          <input formControlName="newPassword" type="password" placeholder="Enter your new password" />
+          <input formControlName="confirmPassword" type="password" placeholder="Confirm your new password" />
+        </div>
+        <button type="submit">Save</button>
+        <div *ngIf="saveMessage" class="success-message">{{ saveMessage }}</div>
+      </form>
+    </main>
+  </div>
+  <footer class="account-footer">
+    <div class="quick-links">
+      <a href="#">Press</a>
+      <a href="#">FAQs</a>
+      <a href="#">Contact us</a>
+      <a href="#">About us</a>
+      <a href="#">Join the team</a>
+      <a href="#">Terms & conditions</a>
+    </div>
+    <div class="footer-bottom">
+      <span>PRIVACY POLICY</span>
+      <span>Copyright © 2024 K-Land. All Rights Reserved.</span>
+      <span>FOLLOW US <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a></span>
+      <span>PRESENTED BY <img src="assets/kland-logo.png" alt="Kland Logo" class="footer-logo" /></span>
+    </div>
+  </footer>
+</div>

@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/assets/login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.15);
+  padding: 40px 32px 32px 32px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  margin-bottom: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #009688;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #009688;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button[disabled] {
+  background: #b2dfdb;
+  cursor: not-allowed;
+}
+
+.form-links {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.forgot {
+  color: #222;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-link {
+  margin-top: 18px;
+  font-size: 0.98rem;
+}
+
+.signup-link a {
+  color: #009688;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 10px;
+  font-size: 0.98rem;
+}
